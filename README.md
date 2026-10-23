@@ -44,6 +44,8 @@ R//
 
   return count;
 }´´´
+}
+
 
 Preguntas:
 1. ¿Cuál es la complejidad temporal Big-O?
