@@ -31,7 +31,7 @@ R//
 
 
 2.
-´´´int CountComparisons(const int values[], int n) {
+int CountComparisons(const int values[], int n) {
   int count = 0;
 
   for (int i = 0; i < n; i++) {
@@ -43,7 +43,8 @@ R//
   }
 
   return count;
-}´´´
+  
+}   
 
 Preguntas:
 1. ¿Cuál es la complejidad temporal Big-O?
