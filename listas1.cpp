@@ -45,12 +45,12 @@ void ReverseList(Node*& head) {
     Node* temp = nullptr;
     
     while (current != nullptr) {
-        // Intercambiar los punteros next y prev
+        // intercambiar los punteros
         temp = current->prev;
         current->prev = current->next;
         current->next = temp;
     
-        // Mover al siguiente nodo que es el anterior
+        //movemos al siguiente nodo que es el anterior
         current = current->prev;
     }
     

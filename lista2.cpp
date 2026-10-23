@@ -26,7 +26,7 @@ struct Node {
 void SwapAdjacentPairs(Node*& head) {
   Node* current = head;
 
-    // Intercambiar nodos adyacentes
+    // intercambiar nodos adyacentes
   while (current != nullptr && current->next != nullptr) {
     Node* first = current;
     Node* second = current->next;
@@ -38,7 +38,7 @@ void SwapAdjacentPairs(Node*& head) {
     first->prev = second;
     first->next = next;
 
-    // Ajustar los enlaces de los nodos adyacentes
+    // ajustar los enlaces de los nodos adyacentes
     if (previous != nullptr) {
       previous->next = second;
     } else {
@@ -58,7 +58,7 @@ int main() {
   const int values[] = {10, 20, 30, 40};
   Node* tail = nullptr;
 
-    // Crear la lista doblemente enlazada
+    // crear la lista doblemente enlazada
   for (int value : values) {
     Node* node = new Node{value, nullptr, tail};
     if (tail != nullptr) {
@@ -71,7 +71,7 @@ int main() {
 
   SwapAdjacentPairs(head);
  
-  // Imprimir la lista después de intercambiar nodos adyacentes
+  // imprimimops la lista despues de intercambiar nodos adyacentes
   for (Node* current = head; current != nullptr; current = current->next) {
     if (current != head) {
       std::cout << " <-> ";

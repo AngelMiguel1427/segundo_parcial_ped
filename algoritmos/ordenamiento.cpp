@@ -29,7 +29,7 @@ void InsertionSort(int arr[], int n) {
             int key = arr[i];
             int j = i - 1;
     
-            // Movemos los elementos según la paridad y el valor.
+            // Movemos los elementos segun la paridad y el valor
             while (j >= 0 && ((arr[j] % 2 == 0 && arr[j] > key) || (arr[j] % 2 != 0 && key % 2 == 0))) {
                 arr[j + 1] = arr[j];
                 j--;

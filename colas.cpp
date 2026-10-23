@@ -32,8 +32,8 @@ void SeparateRequests(
     std::queue<int>& requests,
     std::queue<int>& priority) {
     std::queue<int> aux;
-    // Procesar cada solicitud en la cola requests
-    
+    // procesar cada solicitud en la cola requests
+
     while (!requests.empty()) {
         int current = requests.front();
         requests.pop();
@@ -50,7 +50,7 @@ int main() {
     std::queue<int> requests;
     std::queue<int> priority;
 
-    // Agregandos solicitudes a la cola requests.
+    // agregandos solicitudes a la cola requests
     requests.push(4);
     requests.push(6);
     requests.push(9);
@@ -62,7 +62,7 @@ int main() {
 
     SeparateRequests(requests, priority);
 
-    // imprimimos la cola de solicitudes.
+    // imprimimos la cola de solicitudes
     std::cout << "requests: ";
     while (!requests.empty()) {
         std::cout << requests.front() << " ";
@@ -70,7 +70,7 @@ int main() {
     }
     std::cout << std::endl;
 
-    // y aca la cola de prioridad.
+    // y aca la cola de prioridad
     std::cout << "priority: ";
     while (!priority.empty()) {
         std::cout << priority.front() << " ";

@@ -45,7 +45,7 @@ int main() {
   int values[] = {2, 4, 4, 7, 9, 12, 15};
   int n = sizeof(values) / sizeof(values[0]);
 
-// probamos la función con diferentes valores de target
+// probamos la funcion con diferentes valores de target
   int targets[] = {6, 4, 2, 20};
   for (int target : targets) {
     int index = FindLargestSmaller(values, n, target);

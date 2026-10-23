@@ -36,15 +36,15 @@ void RemoveConsecutiveDuplicates(std::stack<int>& values) {
   while (!values.empty()) {
     int current = values.top();
     values.pop();
-    // Si el primer elemento o es diferente del último agregado, lo agregamos a la pila auxiliar
+    // si el primer elemento diferente del último agregado lo agregamos a la pila auxiliar
     if (first || current != last) {
       aux.push(current);
       last = current;
       first = false;
     }
   }
-  
-  // Transferimos los elementos de la pila auxiliar de vuelta a la pila original.
+
+  // transferimos los elementos de la pila auxiliar de vuelta a la pila original
   while (!aux.empty()) {
     values.push(aux.top());
     aux.pop();
@@ -54,7 +54,7 @@ void RemoveConsecutiveDuplicates(std::stack<int>& values) {
 int main() {
   std::stack<int> values;
 
-  // Pila inicial
+  // pila inicial
   values.push(5);
   values.push(5);
   values.push(5);
